@@ -8,7 +8,7 @@ library("sf")
 result_data <- data.frame()
 
 # 读取企业数据
-firm_data <- read.csv("D:\\Stata14\\examples\\地级市宏观数据\\0942 【高级会员】金融机构数据库2007-2022（已更新）\\上市公司经纬度.csv", head=TRUE, sep=",")
+firm_data <- read.csv("D:\\Stata14\\examples\\地级市宏观数据\\金融机构数据库2007-2022（已更新）\\上市公司经纬度.csv", head=TRUE, sep=",")
 
 # 读取银行 shapefile 数据，指定坐标系为 EPSG:4326
 bank_sf <- st_read("F:/Users/zhang/Desktop/论文/拟写论文/银企距离对数字化转型/企业和银行shp/bank.shp", crs = 4326)
